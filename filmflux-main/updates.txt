@@ -1,0 +1,14 @@
+
+- Estilos modo light.
+- Centrado en modo mobile.
+- Agregar puntuación en las imágenes de las películas.
+- Agregar segunda imagen de las pelis en la descripción.
+- Cambiar íconos modo claro/oscuro.
+- Mejorar visibilidad del logo de sherlock en modo oscuro.
+- Footer: enlaces y estilos.
+
+Problemas a resolver:
+
+- de 853px a 1023px la barra de search queda en pantalla rompiendo el header
+
+

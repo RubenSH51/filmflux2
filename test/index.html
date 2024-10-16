@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB API Test</title>
+</head>
+<body>
+    <h1>Consulta API de TheMovieDB</h1>
+    <script>
+        const API_KEY = '8df32093a2bc91dd41568c23ba71135a';
+        const url_base = 'https://api.themoviedb.org/3';
+        const apiPath = 'search/movie';
+        const query = 'Matrix';
+        const page = 1;
+
+        const url = `${url_base}/${apiPath}?api_key=${API_KEY}&query=${query}&sort_by=popularity.desc&page=${page}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Resultados de la búsqueda:', data.results);
+            })
+            .catch(error => {
+                console.error('Error al obtener los datos:', error);
+            });
+    </script>
+</body>
+</html>
